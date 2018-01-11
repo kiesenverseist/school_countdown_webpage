@@ -24,6 +24,9 @@
     <!-- Display the countdown timer in an element -->
     <p id="demo"></p>
     <p>Time until school</p>
+
+    <p><input id="myCheck" type="checkbox" name="showInTitle" value="showInTitle" > show in title </p>
+
   </body>
 
   <script>
@@ -54,6 +57,15 @@
       clearInterval(x);
       document.getElementById("demo").innerHTML = "EXPIRED";
     }
+
+    var showInTitle = document.getElementById("myCheck").checked;
+
+      if (showInTitle) {
+        document.title= days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+      } else {
+        document.title = "countdown for school"
+      }
+
   }, 1000);
   </script>
 
