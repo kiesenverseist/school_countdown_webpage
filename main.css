@@ -1,0 +1,15 @@
+/* Style teh background */
+body {
+  background-color: black;
+}
+
+/* Style the text */
+p {
+  font-family: sans-serif;
+  color: white;
+}
+
+
+#main_time {
+  font-size: 100px;
+}
